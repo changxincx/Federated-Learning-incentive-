@@ -1,0 +1,29 @@
+{ 
+
+
+
+"main" :
+[
+{
+	"dataset" : ["mnist"],
+	"net" : ["cnn"],
+
+	"iterations" : [2000],
+	"count_bits" : [1],
+	"n_clients" : [10],
+	"participation_rate" : [0.5],
+	"participation_rate2" : [0.5],
+	"classes_per_client" : [43],
+	"batch_size" : [200],
+	"balancedness" : [1],
+
+
+	"compression" : [ ["stc_up", {"p_up" : 0.01}]],
+
+    "budget" : [1200],
+	"log_frequency" : [10],
+	"log_path" : ["results/trash/"],
+	"similary_score" : [0.1]
+}
+]
+}
